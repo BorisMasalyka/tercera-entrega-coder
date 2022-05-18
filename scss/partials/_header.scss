@@ -1,0 +1,26 @@
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import "../variables/variables";
+
+
+
+
+header{
+        nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:space-around;
+        @include fuente;
+            a{
+            margin: 10px;
+            text-decoration: none;
+            list-style: none;
+        }
+        img{
+            height: 120px;
+            width: 120px;
+        }
+    }
+    @extend .header-footer;
+}

@@ -1,0 +1,11 @@
+@import "../variables/variables";
+
+$logo-footer:(
+    ancho: $largo,
+    alto: $altura,
+);
+
+.grupo-1 .box img{
+    width: map-get($logo-footer, ancho);
+    height: map-get($logo-footer, alto);
+}

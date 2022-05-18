@@ -1,0 +1,19 @@
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import "../variables/variables";
+
+footer{
+    margin-top: auto;
+    height: 105px;
+    bottom: 0;
+    width: 100%;
+    .grupo-1 .box{
+        text-align: center;
+    }
+
+    .grupo-2 {
+        color: white;
+        text-align: center;
+    }
+    @extend .header-footer;
+}

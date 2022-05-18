@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+.header-footer, header, footer {
+  background-color: black;
+  color: white; }
+
+.header-footer, header, footer {
+  background-color: black;
+  color: white; }
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif; }
+  header nav a {
+    margin: 10px;
+    text-decoration: none;
+    list-style: none; }
+  header nav img {
+    height: 120px;
+    width: 120px; }
+
+.header-footer, header, footer {
+  background-color: black;
+  color: white; }
+
+.header-footer, header, footer {
+  background-color: black;
+  color: white; }
+
+footer {
+  margin-top: auto;
+  height: 105px;
+  bottom: 0;
+  width: 100%; }
+  footer .grupo-1 .box {
+    text-align: center; }
+  footer .grupo-2 {
+    color: white;
+    text-align: center; }
+
+.contenido {
+  font-family: "Roboto", sans-serif; }
+  .contenido h1 {
+    color: white;
+    font-size: 180px;
+    margin-left: 150px;
+    margin-top: 220px;
+    text-shadow: 3px  0px 0px black, 0px  3px 0px black, -3px  0px 0px black, 0px -3px 0px black; }
+  .contenido p {
+    font-size: 200px;
+    font-weight: bolder;
+    color: blueviolet;
+    margin-left: 150px;
+    margin-top: -250px;
+    text-shadow: 3px  0px 0px white, 0px  3px 0px white, -3px  0px 0px white, 0px -3px 0px white; }
+  .contenido .control {
+    height: 550px;
+    width: 850px;
+    transform: rotate(15deg);
+    margin-left: 800px;
+    margin-top: -700px; }
+  .contenido .play img {
+    height: 120px;
+    width: 120px;
+    margin-left: 300px;
+    margin-top: 10px; }
+
+main {
+  display: grid; }
+  main .image-grid {
+    --gap:16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); }
+  main .image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.band {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px; }
+  @media (min-width: 30em) {
+    .band {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 60em) {
+    .band {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in; }
+  .card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); }
+  .card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .card h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #333; }
+  .card p {
+    flex: 1;
+    line-height: 1.4;
+    margin-top: 15px; }
+  .card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0; }
+  .card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center; }
+
+@media (min-width: 60em) {
+  .item-1 {
+    grid-column: 1 / span 2; }
+    .item-1 h2 {
+      font-size: 24px; } }
+
+.grupo-1 .box img {
+  width: 75px;
+  height: 75px; }
+
+main {
+  display: grid; }
+  main .info-grid {
+    --gap:40px;
+    --num-cols: 4;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); }
+  main .info-grid > iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenido {
+  background-image: url(../img/fondo-jugador.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+
+@media screen and (max-width: 1366px) {
+  .container {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0; }
+  .contenido {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif; }
+  .contenido h1 {
+    font-size: 120px;
+    margin-left: 150px;
+    margin-top: 220px; }
+  .contenido p {
+    font-size: 160px;
+    font-weight: bolder;
+    color: blueviolet;
+    margin-left: 150px;
+    margin-top: -200px; }
+  .grupo-1 .box img {
+    height: 75px;
+    width: 75px; } }
+
+@media screen and (max-width: 800px) {
+  main .video-grid {
+    --gap:40px;
+    --num-cols: 2;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); }
+  main .video-grid > iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  main .image-grid {
+    --gap:16px;
+    --num-cols: 2;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); }
+  main .image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }
+
+@media screen and (max-width: 380px) {
+  main .video-grid {
+    --gap:40px;
+    --num-cols: 1;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); }
+  main .video-grid > iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  main .image-grid {
+    --gap:16px;
+    --num-cols: 1;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); }
+  main .image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }
+
+@media screen and (max-width: 800px) {
+  .contenido h1 {
+    font-size: 80px;
+    margin-left: 150px;
+    margin-top: 220px; }
+  .contenido p {
+    font-size: 120px;
+    font-weight: bolder;
+    color: blueviolet;
+    margin-left: 150px; } }
+
+@media screen and (max-width: 600px) {
+  .contenido h1 {
+    font-size: 60px;
+    margin-left: 50px;
+    margin-top: 220px; }
+  .contenido p {
+    font-size: 80px;
+    font-weight: bolder;
+    color: blueviolet;
+    margin-left: 50px; } }
